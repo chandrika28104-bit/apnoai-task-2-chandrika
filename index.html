@@ -116,6 +116,17 @@
               {isConnected ? '✓ Connected' : 'Connect'}
             </button>
 
+            {/* Like Button */}
+<button
+  onClick={toggleLike}
+  className={`w-full py-3 rounded-xl font-semibold mb-6 transition-all ${
+    isLiked
+      ? 'bg-pink-500 text-white'
+      : 'bg-white/50 text-gray-900 hover:bg-white/70'
+  }`}
+>
+  {isLiked ? '❤️ Liked' : '🤍 Like'}
+</button>
             {/* Social Links */}
             <div className="flex justify-center gap-4">
 
